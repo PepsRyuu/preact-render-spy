@@ -1,5 +1,3 @@
-const entries = require('object.entries');
-
 const ATTRIBUTE_PRESENT = {exists: true};
 
 /**
@@ -27,7 +25,7 @@ const ATTRIBUTE_PRESENT = {exists: true};
 
 const _isWhere = (where, target) => {
   // Check each key from where
-  for (const [key, value] of entries(where)) {
+  for (const [key, value] of Object.entries(where)) {
 
     // If the key is set, but value is undefined, we ignore it
     if (typeof value === 'undefined') {
@@ -107,7 +105,7 @@ const _isWhere = (where, target) => {
 
 const isWhere = where => value => _isWhere(where, value);
 
-module.exports = {
+export {
   _isWhere,
   isWhere,
   ATTRIBUTE_PRESENT,

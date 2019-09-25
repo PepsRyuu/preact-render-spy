@@ -1,6 +1,6 @@
 const {h} = require('preact');
-const {selToWhere} = require('./sel-to-where');
-const {ATTRIBUTE_PRESENT} = require('./is-where');
+const {selToWhere} = require('../src/sel-to-where');
+const {ATTRIBUTE_PRESENT} = require('../src/is-where');
 
 it('node names', () => {
   expect(selToWhere('div')).toEqual({nodeName: 'div'});

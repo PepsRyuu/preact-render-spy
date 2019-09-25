@@ -1,0 +1,203 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[` deep: context matches snapshot 1`] = `
+RenderContext {
+  "0": VNode {
+    "attributes": undefined,
+    "children": Array [],
+    "key": undefined,
+    "nodeName": [Function],
+  },
+  "length": 1,
+}
+`;
+
+exports[` deep: find matches snapshot 1`] = `
+FindWrapper {
+  "0": VNode {
+    "attributes": Object {
+      "onClick": [Function],
+    },
+    "children": Array [
+      "click",
+    ],
+    "key": undefined,
+    "nodeName": "span",
+  },
+  "1": VNode {
+    "attributes": Object {
+      "attr": "text attr",
+    },
+    "children": Array [
+      "text",
+    ],
+    "key": undefined,
+    "nodeName": "span",
+  },
+  "2": VNode {
+    "attributes": Object {
+      "itsFalse": false,
+      "itsTrue": true,
+    },
+    "children": Array [
+      "bools",
+    ],
+    "key": undefined,
+    "nodeName": "span",
+  },
+  "length": 3,
+}
+`;
+
+exports[` deep: output matches snapshot 1`] = `
+VNode {
+  "attributes": undefined,
+  "children": Array [
+    "second first",
+  ],
+  "key": undefined,
+  "nodeName": "div",
+}
+`;
+
+exports[` deep: snapshots for text nodes 1`] = `
+RenderContext {
+  "0": VNode {
+    "attributes": undefined,
+    "children": Array [],
+    "key": undefined,
+    "nodeName": [Function],
+  },
+  "length": 1,
+}
+`;
+
+exports[` deep: snapshots for text nodes 2`] = `
+RenderContext {
+  "0": VNode {
+    "attributes": undefined,
+    "children": Array [],
+    "key": undefined,
+    "nodeName": [Function],
+  },
+  "length": 1,
+}
+`;
+
+exports[` deep: weird render cases toString matches snapshot 1`] = `
+"preact-render-spy (1 nodes)
+-------
+{null}
+"
+`;
+
+exports[` deep: weird render cases toString matches snapshot 2`] = `
+FindWrapper {
+  "length": 0,
+}
+`;
+
+exports[` shallow: context matches snapshot 1`] = `
+RenderContext {
+  "0": VNode {
+    "attributes": undefined,
+    "children": Array [],
+    "key": undefined,
+    "nodeName": [Function],
+  },
+  "length": 1,
+}
+`;
+
+exports[` shallow: find matches snapshot 1`] = `
+FindWrapper {
+  "0": VNode {
+    "attributes": Object {
+      "onClick": [Function],
+    },
+    "children": Array [
+      "click",
+    ],
+    "key": undefined,
+    "nodeName": "span",
+  },
+  "1": VNode {
+    "attributes": Object {
+      "attr": "text attr",
+    },
+    "children": Array [
+      "text",
+    ],
+    "key": undefined,
+    "nodeName": "span",
+  },
+  "2": VNode {
+    "attributes": Object {
+      "itsFalse": false,
+      "itsTrue": true,
+    },
+    "children": Array [
+      "bools",
+    ],
+    "key": undefined,
+    "nodeName": "span",
+  },
+  "length": 3,
+}
+`;
+
+exports[` shallow: output matches snapshot 1`] = `
+VNode {
+  "attributes": undefined,
+  "children": Array [
+    "first",
+  ],
+  "key": undefined,
+  "nodeName": [Function],
+}
+`;
+
+exports[` shallow: snapshots for text nodes 1`] = `
+RenderContext {
+  "0": VNode {
+    "attributes": undefined,
+    "children": Array [],
+    "key": undefined,
+    "nodeName": [Function],
+  },
+  "length": 1,
+}
+`;
+
+exports[` shallow: snapshots for text nodes 2`] = `
+RenderContext {
+  "0": VNode {
+    "attributes": undefined,
+    "children": Array [],
+    "key": undefined,
+    "nodeName": [Function],
+  },
+  "length": 1,
+}
+`;
+
+exports[` shallow: weird render cases toString matches snapshot 1`] = `
+"preact-render-spy (1 nodes)
+-------
+<NullStateless>
+  <Div></Div>
+</NullStateless>
+"
+`;
+
+exports[` shallow: weird render cases toString matches snapshot 2`] = `
+FindWrapper {
+  "0": VNode {
+    "attributes": undefined,
+    "children": Array [],
+    "key": undefined,
+    "nodeName": [Function],
+  },
+  "length": 1,
+}
+`;

@@ -1,6 +1,6 @@
 const {h, Component} = require('preact');
 
-const {deep, shallow} = require('./preact-render-spy');
+const {deep, shallow} = require('../src/preact-render-spy');
 
 class ReceivesProps extends Component {
   constructor(props) {

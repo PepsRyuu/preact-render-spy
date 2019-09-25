@@ -1,4 +1,4 @@
-const {ATTRIBUTE_PRESENT} = require('./is-where');
+import { ATTRIBUTE_PRESENT } from './is-where';
 
 const selToWhere = sel => {
   if (typeof sel === 'object') {
@@ -17,6 +17,6 @@ const selToWhere = sel => {
   return {nodeName: sel};
 };
 
-module.exports = {
+export {
   selToWhere,
 };

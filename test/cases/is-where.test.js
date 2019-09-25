@@ -1,6 +1,6 @@
 const {h, Component} = require('preact');
 
-const {isWhere} = require('./is-where');
+const {isWhere} = require('../src/is-where');
 
 it('tests tag names', () => {
   expect(isWhere({nodeName: 'div'})(<div />)).toBeTruthy();

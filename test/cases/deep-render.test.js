@@ -1,6 +1,6 @@
 const {h, Component} = require('preact');
 
-const {render} = require('./preact-render-spy');
+const {render} = require('../src/preact-render-spy');
 
 it('componentWillReceiveProps', () => {
   class Child extends Component {

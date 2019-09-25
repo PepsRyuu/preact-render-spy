@@ -1,9 +1,8 @@
-const {render, rerender, h, Component} = require('preact');
-const isEqual = require('lodash.isequal');
-const renderToString = require('preact-render-to-string/jsx');
-
-const {isWhere} = require('./is-where');
-const {selToWhere} = require('./sel-to-where');
+import {render, rerender, h, Component} from 'preact';
+import isEqual from 'lodash.isequal';
+import renderToString from 'preact-render-to-string/jsx';
+import { isWhere } from './is-where';
+import { selToWhere } from './sel-to-where';
 
 const config = {
   SPY_PRIVATE_KEY: 'SPY_PRIVATE_KEY',
@@ -472,13 +471,12 @@ class RenderContext extends FindWrapper {
 const deep = (vdom, {depth = Infinity} = {}) => new RenderContext({depth}).render(vdom);
 const shallow = vdom => deep(vdom, {depth: 1});
 
-exports = module.exports = deep;
-
-exports.config = config;
-exports.deep = deep;
-exports.default = deep;
-exports.render = deep;
-exports.rerender = rerender;
-exports.shallow = shallow;
-exports.RenderContext = RenderContext;
-exports.FindWrapper = FindWrapper;
+export {
+  config,
+  deep,
+  deep as render,
+  rerender,
+  shallow,
+  RenderContext,
+  FindWrapper
+}

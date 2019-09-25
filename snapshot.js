@@ -1,5 +1,5 @@
 const renderToString = require('preact-render-to-string/jsx');
-const renderSpy = require('./src/preact-render-spy');
+const renderSpy = require('./dist/preact-render-spy.cjs');
 const FindWrapper = renderSpy.FindWrapper;
 const config = renderSpy.config;
 

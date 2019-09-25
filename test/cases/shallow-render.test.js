@@ -1,6 +1,6 @@
 const {h} = require('preact');
 
-const {deep, shallow} = require('./preact-render-spy');
+const {deep, shallow} = require('../src/preact-render-spy');
 
 it('shallow renders the first level of Components', () => {
   const ErrorIfRendered = () => {throw new Error('should not ever render');};
